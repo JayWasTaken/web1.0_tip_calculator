@@ -20,16 +20,16 @@ function doMath() {
     let total = bill + (tipTotal)
     let split = total / people
 
-    displayTip.innerHTML = tip
-    displayTotal.innerHTML = total
-    displayResponsibility.innerHTML = split
+    displayTip.innerHTML = tip.toFixed(2);
+    displayTotal.innerHTML = total.toFixed(2);
+    displayResponsibility.innerHTML = split.toFixed(2);
     
     console.log(tip)
     console.log(total)
     console.log(split)
 }
 console.log(display.innerHTML) // prints the text inside the tags
-console.log(billInput.value) // prints the value entered into the input
+
 
 billInput.value = 20.00
 tipInput.value = 15
